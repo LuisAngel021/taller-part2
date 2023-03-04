@@ -9,5 +9,10 @@
         "project_name": "taller-part2",
         "runtime": "python3.8",
         "s3_bucket": "zappa-p0cjkce3k"
+        
+        "events": [{
+           "function": "your_module.your_function", // The function to execute
+           "expressions": ["cron(46 20 ? * SUN-THU *)", "cron(0 0-8 ? * MON-FRI *)"] // When to execute it (in cron or rate format)
+       }],
     }
 }

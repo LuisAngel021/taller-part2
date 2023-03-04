@@ -49,7 +49,7 @@ jobs:
              aws-session-token: ${{secrets.AWS_SESSION_TOKEN}}
              aws-region: us-east-1
       - name: Run zappa
-        uses: |
+        run: |
               pip install virtualenv
               virtualenv env
               source env/bin/activate

@@ -1,6 +1,6 @@
 {
     "dev": {
-        "app_function": "apps",
+        "app_function": "apps.f",
         "keep_warm": false,
         "role_name": "LabRole",
         "manage_roles": false,
